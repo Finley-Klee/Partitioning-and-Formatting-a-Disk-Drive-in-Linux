@@ -6,19 +6,18 @@ Insert a short description of the project
 
 <h2>Utilities Used</h2>
 
-- <b>Number 1</b> 
-- <b>Number 2</b>
+- <b>fdisk</b> 
 
 <h2>Environments Used </h2>
 
-- <b>Linux Ubuntu</b>
+- <b>Linux</b>
 
 <h2>Project walk-through:</h2>
 
-- <b>Section Name</b>
-<p>Description</p>
+- <b>Understanding the Disk's Structure</b>
+<p>Before I can partition or format the disk, I first need to familiarize myself with the current disk structure. To do this, I used the lsblk command, the df command, and the fdisk utility.</p>
 <br>
-<p align="center">Step One: <br/>
+<p align="center"><br/>
   <img src="" height="80%" width="80%" alt="image one"/>
   <br />
   <br />
