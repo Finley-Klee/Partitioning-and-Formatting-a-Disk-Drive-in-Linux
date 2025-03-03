@@ -53,5 +53,9 @@ I learned from the help page that I can use the command p to list details about 
   <br />
 Next, I was able to create new partitions using the n command. I left the starting sector of the partition unchanged, and specified the size by typing in 2097200 to make the 1 GB partition.<br />
   <img src="https://github.com/user-attachments/assets/110cbd8d-5589-45a5-8c51-d17a9039c19b" height="80%" width="80%" alt="a black screen with white text showing the n command, partition 1, the default first sector, and the last sector as 2097200. The last line confirms the creation of a new partition 1 with the type Linux Filesystem and the size 1023 MiB."/>
+   <br />
+  <br />
+Then, I created the second partition, also using the n commnad, but this time I left both the start and end of the partition as the default to assign all of the remaining space in the disk to partition 2.<br />
+  <img src="https://github.com/user-attachments/assets/bc59faab-e32b-40d6-aa66-6f484ad103e6" height="80%" width="80%" alt="a black screen with white text showing the n command, partition 2, the default first sector, and last sector. The last line confirms the creation of a new partition 2 with the type Linux Filesystem and the size 9 GiB."/>
 </p>
 
