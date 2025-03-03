@@ -58,4 +58,43 @@ Next, I was able to create new partitions using the n command. I left the starti
 Then, I created the second partition, also using the n commnad, but this time I left both the start and end of the partition as the default to assign all of the remaining space in the disk to partition 2.<br />
   <img src="https://github.com/user-attachments/assets/bc59faab-e32b-40d6-aa66-6f484ad103e6" height="80%" width="80%" alt="a black screen with white text showing the n command, partition 2, the default first sector, and last sector. The last line confirms the creation of a new partition 2 with the type Linux Filesystem and the size 9 GiB."/>
 </p>
+<br />
+<br />
+
+- <b>Changing the partition types</b>
+<p>Now that I have created my two new partitions, I can change the type of my first partition to be a linux swap.</p>
+<br>
+<p align="center">I used the t command in the fdisk utility to specify the type I want to assign to the partition, and typed in 1 for the partition number because I want to change the type of my first partition. I brought up the list of types with L and found that linux swap is number 19, so where the utility prompts for partition type I typed in 19 and hit enter.<br/>
+  <img src="https://github.com/user-attachments/assets/cbbae224-36d1-4141-b49d-a292c3d3d029" height="80%" width="80%" alt="a black screen with white text showing the t command followed by prompts for the partition number and partition type. In the line for parition type the letter L is witte followed by a list showing all of the different available types."/>
+  <img src="https://github.com/user-attachments/assets/f5cb946e-5c19-416a-b34f-c2f070319ec3" height="80%" width="80%" alt="a black screen with white text which reads partition type 19 and the next line reads changed type of partition linux filesystem to linux swap."/>
+  <br />
+  <br />
+ Now that I have made the changes that I want to make, I need to write those changes to the disk using the v command to verify the changes and the w command to write them. <br />
+  <img src="https://github.com/user-attachments/assets/676e5160-a1ff-4adb-97bd-663b28c4de78" height="80%" width="80%" alt="a black screen with white text showing the command v followed by lines reading no errors detected, header version 1.0, using 2 out of 128 partitions, A total of 4013 free sectors is available in 2 segments the largest is 1007 KiB. Then the next block of text shows the command w followed by confirmation reading the partition table has been altered, calling ioctl to re-read partition table, sycning disks."/>
+</p>
+<br />
+<br />
+
+- <b>Using mkfs to format partitions and mounting the disk</b>
+<p>The last step in the process is to update the file system on the 9 GB partition to ext4 and mount the sda disk to the system.</p>
+<br>
+<p align="center"><br/>
+  <img src="" height="80%" width="80%" alt="image one"/>
+  <br />
+  <br />
+  Step Two: <br />
+  <img src="" height="80%" width="80%" alt="image two"/>
+  <br />
+  <br />
+  Step Three: <br />
+  <img src="" height="80%" width="80%" alt="image three"/>
+   <br />
+  <br />
+  Step Four: <br />
+  <img src="" height="80%" width="80%" alt="image four"/>
+   <br />
+  <br />
+  Step Five: <br />
+  <img src="" height="80%" width="80%" alt="image five"/>
+</p>
 
