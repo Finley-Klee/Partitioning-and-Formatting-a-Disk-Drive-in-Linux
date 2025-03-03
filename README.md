@@ -78,23 +78,11 @@ Then, I created the second partition, also using the n commnad, but this time I 
 - <b>Using mkfs to format partitions and mounting the disk</b>
 <p>The last step in the process is to update the file system on the 9 GB partition to ext4 and mount the sda disk to the system.</p>
 <br>
-<p align="center"><br/>
-  <img src="" height="80%" width="80%" alt="image one"/>
+<p align="center">To create the ext4 file system in the 9 GB partition, I used the command mkfs. I ran the command as a super user using sudo, and I used the -t flag to indicate the filetype ext4 and then passed in the location /dev/sda2 to indicate the disk and partition to format.<br/>
+  <img src="https://github.com/user-attachments/assets/f24e58ad-c377-4b03-876a-901ac462749c" height="80%" width="80%" alt="a black screen with white text showing the command described and the output which walks through the changes being made to the disk."/>
   <br />
   <br />
-  Step Two: <br />
-  <img src="" height="80%" width="80%" alt="image two"/>
-  <br />
-  <br />
-  Step Three: <br />
-  <img src="" height="80%" width="80%" alt="image three"/>
-   <br />
-  <br />
-  Step Four: <br />
-  <img src="" height="80%" width="80%" alt="image four"/>
-   <br />
-  <br />
-  Step Five: <br />
-  <img src="" height="80%" width="80%" alt="image five"/>
+Finally, I mounted the sda drive to the system using the mount command, passing in the disk and the location where I would like to mount it, which in this case is /home/mydrive. After mounting the drive, I ran the lsblk command to confirm that the disk changes were made and that the disk was mounted in the location I specified.<br />
+  <img src="https://github.com/user-attachments/assets/c510df3d-a44d-471f-984b-a5b432149998" height="80%" width="80%" alt="a black screen with white text. The first line shows the command and then the second line shows the lsblk commnad followed by the table showing the information about the mounted disks. From this I confirm that sda has two partitions with the appropriate types and that it is mounted to home my drive."/>
 </p>
 
